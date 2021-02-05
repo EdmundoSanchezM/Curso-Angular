@@ -1,0 +1,11 @@
+<div *ngIf="!isAuntenticado()" class="box centrado">
+  <a routerLink="/login">Login</a>
+</div>
+<div *ngIf="isAuntenticado()" class="box centrado">
+  <a style="cursor:pointer;" (click)="salir()">Salir</a>
+</div>
+<div class="box" id="heading">
+  <h1>{{ titulo }}</h1>
+</div>
+
+<router-outlet></router-outlet>
