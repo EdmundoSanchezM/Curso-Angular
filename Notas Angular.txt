@@ -1,0 +1,23 @@
+nuevo proyecto: ng new "nombre"
+iniciar servidor abriendo navegador: ng serve -o
+detener servidor: ctrl + c
+crear nuevo componente: ng g c "nombre" '-s' '-t' //-s style in line -t template in line
+Iniciar un proyecto sin la carpeta de node-modules: escribir en terminal npm install
+
+/*Instalar bootstrap*/
+npm i bootstrap jquery popper.js --save
+--Para incorporarlo en nuestro proyecto--
+Ir a angular.json
+Buscar styles en build y copiar:
+"styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+Agregar routing a una app sin routing: ng g module app-routing
+
+Compilar el proyecto para produccion: ng build //Aplicacion a nivel raiz, si no agregar: --base-href /"Nombre de la carpeta en donde se desplegara"
