@@ -1,0 +1,62 @@
+<header id="main-header" class="py-2 bg-info text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1><i class="fas fa-user"></i>Login</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="actions" class="py-4 mb-4 bg-light">
+  <div class="container">
+    <div class="row"></div>
+  </div>
+</section>
+
+<flash-messages></flash-messages>
+
+<section id="login">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-header">
+              <h4>Login</h4>
+              <div class="card-body">
+                <form (submit)="login()">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      [(ngModel)]="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      name="password"
+                      [(ngModel)]="password"
+                      required
+                    />
+                  </div>
+                  <input
+                    type="submit"
+                    value="login"
+                    class="btn btn-primary btn-block"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
