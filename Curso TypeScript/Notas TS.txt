@@ -1,0 +1,12 @@
+instalar tpyescript: npm install -g typescript
+compilar archivo TS: tsc nombrearchivo
+Informar al IDE que estamos usando TS: tsc -init
+Compilar en automatico de TS a JS: tsc -w
+Instalar Webpack para deplegar la aplicacion: npm install webpack webpack-cli webpack-dev-servernpm install typescript ts-looder --save-dev
+Instalar TS loader para las clases : npm install typescript ts-loader --save-dev
+Generar archivo package.json: npm init -y
+Agregar:
+"scripts":{
+    "start": "webpack-dev-server --mode development"
+  },
+para poder ejecutar el servidor en modo de desarrollo, despues crear el archivo webpack.config.js (anexado en la carpeta Modulos)
